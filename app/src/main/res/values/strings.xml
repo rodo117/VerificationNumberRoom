@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NumberValidator</string>
+
+    <string name="hint_number">Set Your Phone Here</string>
+    <string name="send_number">Send SMS</string>
+    <string name="twilio_token">25e37baeb5ed4e7ed5aec1b901bbd614</string>
+    <string name="twilio_number">+1 (415) 917-1595</string>
+    <string name="twilio_account_sid">ACfd09e6e8a17089bf5d3b48e9c16e44d5</string>
+    <string name="mex_code_number">+52</string>
+
+    <string name="set_your_validation_number">Set your validation phoneNumber here</string>
+    <string name="validate">Validate</string>
+
+</resources>
