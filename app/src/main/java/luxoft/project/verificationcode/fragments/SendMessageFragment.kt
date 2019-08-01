@@ -1,4 +1,4 @@
-package luxoft.project.verificationcode.Fragments
+package luxoft.project.verificationcode.fragments
 
 import android.content.Context
 import android.os.Bundle
@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.validate_code_layout.*
 import kotlinx.android.synthetic.main.validate_code_layout.view.*
 import kotlinx.android.synthetic.main.validate_code_layout.view.number_tv
 import luxoft.project.verificationcode.R
-import luxoft.project.verificationcode.ViewModel.SendMessageViewModel
+import luxoft.project.verificationcode.viewModel.SendMessageViewModel
 
 open class SendMessageFragment:Fragment() {
 

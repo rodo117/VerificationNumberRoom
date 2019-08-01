@@ -1,4 +1,4 @@
-package luxoft.project.verificationcode.ViewModel
+package luxoft.project.verificationcode.viewModel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -6,9 +6,10 @@ import androidx.lifecycle.LiveData
 
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import luxoft.project.verificationcode.Room.Entities.PhoneNumber
-import luxoft.project.verificationcode.Room.NumbersRoomDataBase
-import luxoft.project.verificationcode.Room.Repository.PhoneNumberRepository
+import luxoft.project.verificationcode.room.entities.PhoneNumber
+import luxoft.project.verificationcode.room.NumbersRoomDataBase
+import luxoft.project.verificationcode.room.repository.PhoneNumberRepository
+
 
 class SendMessageViewModel(application:Application) : AndroidViewModel(application) {
 
@@ -16,7 +17,7 @@ class SendMessageViewModel(application:Application) : AndroidViewModel(applicati
         repository.allNumbers
     }
 
-    private val repository:PhoneNumberRepository
+    private val repository: PhoneNumberRepository
 
     init {
         val phoneNumberDao = NumbersRoomDataBase.getDataBaseInstance(application).phoneNumbersDao()

@@ -1,4 +1,4 @@
-package luxoft.project.verificationcode.Adapters
+package luxoft.project.verificationcode.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.number_list_item.view.*
 import luxoft.project.verificationcode.R
-import luxoft.project.verificationcode.Room.Entities.PhoneNumber
+import luxoft.project.verificationcode.room.entities.PhoneNumber
 
 class NumbersRecyclerAdapter:RecyclerView.Adapter<NumbersRecyclerAdapter.ViewHolder>() {
 

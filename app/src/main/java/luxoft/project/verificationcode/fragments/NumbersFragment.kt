@@ -1,19 +1,17 @@
-package luxoft.project.verificationcode.Fragments
+package luxoft.project.verificationcode.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Adapter
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.recycler_view_layout.view.*
-import luxoft.project.verificationcode.Adapters.NumbersRecyclerAdapter
+import luxoft.project.verificationcode.adapters.NumbersRecyclerAdapter
 import luxoft.project.verificationcode.R
-import luxoft.project.verificationcode.Room.Entities.PhoneNumber
-import luxoft.project.verificationcode.ViewModel.SendMessageViewModel
+import luxoft.project.verificationcode.room.entities.PhoneNumber
+import luxoft.project.verificationcode.viewModel.SendMessageViewModel
 
 class NumbersFragment:Fragment() {
 

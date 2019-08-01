@@ -1,16 +1,16 @@
-package luxoft.project.verificationcode.Activities
+package luxoft.project.verificationcode.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import luxoft.project.verificationcode.Fragments.NumbersFragment
+import luxoft.project.verificationcode.fragments.NumbersFragment
 //import com.twilio.Twilio
 
-import luxoft.project.verificationcode.Fragments.SendMessageFragment
+import luxoft.project.verificationcode.fragments.SendMessageFragment
 import luxoft.project.verificationcode.R
-import luxoft.project.verificationcode.Room.Entities.PhoneNumber
-import luxoft.project.verificationcode.ViewModel.SendMessageViewModel
+import luxoft.project.verificationcode.room.entities.PhoneNumber
+import luxoft.project.verificationcode.viewModel.SendMessageViewModel
 
 class MainActivity : AppCompatActivity(),SendMessageFragment.SaveNumber {
 

@@ -1,19 +1,20 @@
-package luxoft.project.verificationcode.Room.Interfaces
+package luxoft.project.verificationcode.room.daos
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
-import luxoft.project.verificationcode.Room.Entities.PhoneNumber
+import luxoft.project.verificationcode.room.entities.PhoneNumber
+
 
 @Dao
 interface PhoneNumberDao {
 
-    @Query("SELECT * FROM numbers_table")
+    @Query("Select * from numbers_table")
     fun getAllNumbers():LiveData<List<PhoneNumber>>
 
     @Insert
     suspend fun insert(phoneNumber: PhoneNumber)
+
 
 }
